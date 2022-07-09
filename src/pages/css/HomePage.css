@@ -1,0 +1,42 @@
+@import url(../../components/design/css/root.css);
+
+.HomePage{
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  max-width: var(--max-width--desktop);
+  margin: 0 auto;
+}
+
+.HomePage--title{
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 2rem 0;
+
+}
+
+.HomePage--welcome--text{
+  font-size: 1.5rem;
+  text-align: center;
+  margin: calc(4 * var(--gutter) ) 0;
+}
+
+
+.HomePage--button{
+  display: block;
+  margin: 0 auto;
+  margin-top: calc(4 * var(--gutter) ) ;
+  width: calc(100% / 7 * 3);
+  height: calc(100% / 3);
+
+}
+.HomePage--ExampleCards--containter{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 10%;
+  gap: var(--column--gap);
+  padding-bottom: 10%;
+}

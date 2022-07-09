@@ -1,0 +1,49 @@
+@import url(../../design/css/root.css);
+
+
+
+
+.Card--container{
+  display: inline-flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:0 var(--gutter); 
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  width:100%;
+}
+.Card--image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.Card--text{
+  position: absolute;
+  width: calc(100% - (var(--gutter)*2));
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 1.5rem;
+  background-color: var(--dark--cover);
+  color: white
+}
+.Card--text a, .Card--text a:visited, .Card--text a:hover, .Card--text a:active{
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  width: inherit;
+  flex :1;
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+}

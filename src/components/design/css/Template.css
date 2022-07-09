@@ -1,0 +1,25 @@
+@import url(./root.css);
+
+.Footer{
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: var(--max-width--desktop);
+  margin: 0 auto;
+  margin-top: var(--footer--margin);
+
+}
+
+.Footer-item{
+  width: 100%;
+  text-decoration: none;
+  color: var(--color--text--footer);
+  text-align: center;
+}
+.Footer-item a,
+.Footer-item a:hover, 
+.Footer-item a:active,
+.Footer-item a:visited{
+  color: var(--color--text--footer);
+}

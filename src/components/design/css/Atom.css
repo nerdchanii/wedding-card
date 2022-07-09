@@ -1,0 +1,9 @@
+@import url(./root.css);
+
+
+button{
+  background-color: var(--button--default);
+  padding: var(--button--padding);
+  border-radius: var(--round);
+  border: none;
+}

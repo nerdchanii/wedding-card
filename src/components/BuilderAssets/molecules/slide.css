@@ -1,0 +1,32 @@
+
+
+
+/* slide bar */
+.slide{
+  max-width: 600px;
+  overflow: scroll;
+  height: 300px;
+}
+.container{
+  display: flex;
+  gap: 20px;
+  height: inherit;
+  width: 100%;
+  flex-direction: row;
+}
+
+.slide::-webkit-scrollbar{
+  width: 0px;
+  height: 5px;
+  background: #f1f1f150;
+
+}
+
+.slide-images{
+  width: 100%;
+  height: 100%;
+  
+}
+
+
+
