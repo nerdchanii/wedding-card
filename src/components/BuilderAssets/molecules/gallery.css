@@ -1,0 +1,71 @@
+/* 3x3 images contianer*/
+/* margin var */
+:root{
+  --gutter: 10px;
+  --gallery-margin: calc(var(--gutter));
+
+}
+
+
+.gallery {
+  display: block;
+}
+
+.gallery-container{
+  display: inline-block;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0;
+  position: relative;
+}
+
+/* 3x3 image */
+/* 1x1 x 2 + 2x1 + 1 */
+/*ex 
+1x1 2x2 2x2
+1x1 2x2 2x2    
+1x1 1x1 1x1
+*/
+
+.gallery-item--1x1{
+  width: calc(33.3% - 2%);
+  float: left;
+  margin: 1%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.gallery-item--2x2{
+  width: calc(66.6% - 2%);
+  float: left;
+  margin: 1%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.gallery-item--full{
+  width: 98% !important;
+  padding: 0;
+  position: absolute !important;
+  z-index: 1;
+  overflow: hidden;
+  cursor: pointer;
+  transition: width 5s, z-index 5s, position 10s, ease-in-out ;
+}

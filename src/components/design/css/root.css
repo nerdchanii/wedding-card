@@ -1,0 +1,17 @@
+:root{
+  --gutter: 10px;
+  --gallery-margin: calc(var(--gutter));
+  --column--gap: calc(var(--gutter) * 2);
+  --button--padding: calc(var(--gutter) * 2);
+  --round: calc(var(--gutter) * 2);
+  --footer--margin: calc(var(--gutter) * 4);
+
+  --max-width--desktop: 1200px;
+  
+  /* colors */
+  --dark--cover: #1A1A1A50;
+  --background--default:#FEF4DE;
+  --button--default: #9FB561;
+  --color--text--default: #000000;
+  --color--text--footer: #afafaf;
+}
